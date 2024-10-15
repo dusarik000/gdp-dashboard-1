@@ -12,6 +12,7 @@ st.markdown("""
     <script>
     function sendHeight() {
         const height = document.body.scrollHeight;
+        console.log(height);
         window.parent.postMessage(height, "*");
     }
     setTimeout(sendHeight, 100);
